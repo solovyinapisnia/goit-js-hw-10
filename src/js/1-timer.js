@@ -9,6 +9,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
+import errorIcon from "/img/error-icon.svg";
 
 
 let userSelectedDate;
@@ -38,7 +39,7 @@ const options = {
                 message: 'Please choose a date in the future',
                 color: "red",
                 position: 'topRight',
-                iconUrl: "./img/error-icon.svg",
+                iconUrl: errorIcon,
                 messageColor: "#ffffff",
                 backgroundColor: "#EF4040",
                 progressBarColor: "#B51B1B"

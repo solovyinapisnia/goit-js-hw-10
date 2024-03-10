@@ -6,6 +6,9 @@ import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
 
+import errorIcon from "/img/error-icon.svg";
+import successIcon from "/img/success-icon.svg";
+
 const form = document.querySelector("form");
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -31,7 +34,7 @@ form.addEventListener("submit", (event) => {
                 titleColor: "#ffffff",
                 message: value,
                 position: 'topRight',
-                iconUrl: "./img/success-icon.svg",
+                iconUrl: successIcon,
                 messageColor: "#ffffff",
                 backgroundColor: "#59A10D",
                 progressBarColor: "#326101"
@@ -44,7 +47,7 @@ form.addEventListener("submit", (event) => {
                 titleColor: "#ffffff",
                 message: error,
                 position: 'topRight',
-                iconUrl: "./img/error-icon.svg",
+                iconUrl: errorIcon,
                 messageColor: "#ffffff",
                 backgroundColor: "#EF4040",
                 progressBarColor: "#B51B1B"
