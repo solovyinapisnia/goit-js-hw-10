@@ -38,7 +38,7 @@ const options = {
                 message: 'Please choose a date in the future',
                 color: "red",
                 position: 'topRight',
-                iconUrl: "/img/error-icon.svg",
+                iconUrl: "./img/error-icon.svg",
                 messageColor: "#ffffff",
                 backgroundColor: "#EF4040",
                 progressBarColor: "#B51B1B"

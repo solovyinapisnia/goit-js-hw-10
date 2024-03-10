@@ -31,7 +31,7 @@ form.addEventListener("submit", (event) => {
                 titleColor: "#ffffff",
                 message: value,
                 position: 'topRight',
-                iconUrl: "/img/success-icon.svg",
+                iconUrl: "./img/success-icon.svg",
                 messageColor: "#ffffff",
                 backgroundColor: "#59A10D",
                 progressBarColor: "#326101"
@@ -44,7 +44,7 @@ form.addEventListener("submit", (event) => {
                 titleColor: "#ffffff",
                 message: error,
                 position: 'topRight',
-                iconUrl: "/img/error-icon.svg",
+                iconUrl: "./img/error-icon.svg",
                 messageColor: "#ffffff",
                 backgroundColor: "#EF4040",
                 progressBarColor: "#B51B1B"
