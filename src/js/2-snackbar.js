@@ -17,22 +17,21 @@ form.addEventListener("submit", (event) => {
     const promise = new Promise((resolve, reject) => {
         setTimeout(() => {
             if (state === 'fulfilled') {
-                resolve(`Fulfilled promise in ${delay}ms`);
+                resolve(delay);
             }
             if (state === 'rejected') {
-                reject(`Rejected promise in ${delay}ms`);
+                reject(delay);
             }
-            reject("Unknown error");
         }, delay);
     });
 
     promise
-        .then((value) => {
+        .then((delay) => {
             iziToast.show({
                 close: true,
                 title: 'OK',
                 titleColor: "#ffffff",
-                message: value,
+                message: `Fulfilled promise in ${delay}ms`,
                 position: 'topRight',
                 iconUrl: successIcon,
                 messageColor: "#ffffff",
@@ -40,12 +39,12 @@ form.addEventListener("submit", (event) => {
                 progressBarColor: "#326101"
             });
         })
-        .catch((error) => {
+        .catch((delay) => {
             iziToast.show({
                 close: true,
                 title: 'Error',
                 titleColor: "#ffffff",
-                message: error,
+                message: `Rejected promise in ${delay}ms`,
                 position: 'topRight',
                 iconUrl: errorIcon,
                 messageColor: "#ffffff",
