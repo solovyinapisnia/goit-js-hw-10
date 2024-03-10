@@ -137,12 +137,6 @@ label {
   flex-direction: column;
   row-gap: 8px;
 }
-.form-field-group {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
-  margin-bottom: 16px;
-}
 
 button.button {
   font-family: 'Montserrat', sans-serif;
